@@ -27,7 +27,7 @@ class WebGLRendererWrapper {
     }
 
     setClearColor(...args) {
-        this.renderer.setClearColor(args);
+        this.renderer && this.renderer.setClearColor(args);
     }
 
     setSize(width, height) {
@@ -35,7 +35,7 @@ class WebGLRendererWrapper {
     }
 
     render(scene, camera) {
-        this.renderer.render(scene, camera);
+        this.renderer && this.renderer.render(scene, camera);
     }
 
     dispose() {

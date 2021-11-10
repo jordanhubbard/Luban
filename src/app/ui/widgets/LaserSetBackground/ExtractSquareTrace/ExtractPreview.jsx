@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as THREE from 'three';
-import Detector from 'three/examples/js/Detector';
+// import Detector from 'three/examples/js/Detector';
 import { DATA_PREFIX } from '../../../../constants';
 import api from '../../../../api';
 import ExtractControls from '../../../../three-extensions/ExtractControls';
@@ -226,9 +226,9 @@ class ExtractPreview extends Component {
     }
 
     render() {
-        if (!Detector.webgl) {
-            return null;
-        }
+        // if (!Detector.webgl) {
+        //     return null;
+        // }
         return (
             <div ref={this.node} />
         );

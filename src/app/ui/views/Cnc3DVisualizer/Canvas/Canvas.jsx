@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Vector3, Matrix4, Color, PerspectiveCamera, Scene, Group, DirectionalLight, HemisphereLight } from 'three';
-import Detector from 'three/examples/js/Detector';
+// import Detector from 'three/examples/js/Detector';
 import PropTypes from 'prop-types';
 import TWEEN from '@tweenjs/tween.js';
 
@@ -232,9 +232,9 @@ class Canvas extends Component {
     }
 
     render() {
-        if (!Detector.webgl) {
-            return null;
-        }
+        // if (!Detector.webgl) {
+        //     return null;
+        // }
         return (
             <div
                 ref={this.node}

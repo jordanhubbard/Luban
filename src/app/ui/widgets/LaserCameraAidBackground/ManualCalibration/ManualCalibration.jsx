@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as THREE from 'three';
-import Detector from 'three/examples/js/Detector';
 import { DATA_PREFIX } from '../../../../constants';
 import ManualCalibrationControls from '../../../../three-extensions/ManualCalibrationControls';
 import RectangleGridHelper from '../../../../three-extensions/RectangleGridHelper';
@@ -262,9 +261,6 @@ class ManualCalibration extends Component {
     }
 
     render() {
-        if (!Detector.webgl) {
-            return null;
-        }
         return (
             <div style={{ border: '1px solid #c8c8c8', overflow: 'hidden', boxSizing: 'border-box' }} ref={this.node} />
         );
